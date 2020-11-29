@@ -1,0 +1,263 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+/*-- A kikommentelt szövegek a készítés közben fel nem
+     használt kódok és egyéb szövegek amik az akkori
+     pillanatban kellettek--*/
+img{
+	max-width: 100%;
+}
+
+
+body{
+	display: grid;
+	grid-template-areas: 
+		"fejlec"
+		"kontent"
+		"lablec"
+	;
+	grid-template-rows: max-content 1fr max-content;
+	min-height: 100vh;
+		}
+header{
+	background-color: rgb(60, 60, 60);
+
+	grid-area: fejlec;
+	height: 4em;
+	box-sizing: border-box;
+	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+  	top: 0;
+}
+  	
+.div{
+	background-color: lightgrey;
+	grid-area: kontent;
+}
+main{
+	background-color: lightgrey;
+	grid-area: kontent;
+}
+footer{
+	background-color: #484848;
+	grid-area: lablec;
+	height: 2rem;
+	text-align: center;
+	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+  	bottom: 0;
+}
+
+.lab{
+	transform: translateY(1rem);
+}
+.hover:hover{
+	cursor: pointer;
+}
+.lab:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.aloldal{
+	border: 2px solid black;
+	border-radius: 8px;
+	margin:4px;
+	padding: 2px;
+	color: black;
+
+}
+
+.aloldalgomb{
+	transform: translateY(1rem);
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+}
+
+.cim{
+	text-align: center;
+	font-size: 5rem;
+	padding:4px;
+	font-weight: 700;
+	color: black;
+	transform: translateY(30px);
+
+}
+/*
+Projektmunka
+Önéletrajz
+Kedvenc CSGO csapatom
+Skatch
+
+<span class="aloldal">Projektmunka</span>
+<span class="aloldal">Önéletrajz</span>
+<span class="aloldal">Kedvenc CSGO csapatom</span>
+<span class="aloldal">Skatch</span>
+
+style="text-decoration: none;"
+
+ class="en"
+
+
+*/
+
+.bemutatkozas{
+	
+	font-size: 1rem;
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	font-weight: 400;
+	/*float: left;*/
+	/*transform: translateY(px);*/
+}
+
+/*.kepbal{
+	float: left;
+}
+.kepjobb{
+	float: right;
+}*/
+.menukep{
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+	height: 2rem;
+	width: 2rem;
+	transform: translateY(9px);
+}
+
+/*
+<a href="projektmunka.html">
+<img src="css/kepek/menu.png" alt="menu" class="kep"></a>
+
+<img src="css/kepek/menu.png" alt="menu" class="kep">
+
+https://drive.google.com/drive/folders/1DvF7Xh9n0MvJjgFI-p1clBlwreCZqy8e?usp=sharing
+
+.span{
+	text-align: center;
+	font-size:24px;
+	border: 3px;
+	border-radius: 12px;
+	padding:4px;
+	margin:4px;
+}
+*/
+
+/*--racs--*/
+.kepek_flex_racs{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 1rem;
+}
+.kepek_flex_racs .kep_kartya{
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	flex-grow: 1;
+
+}
+.kep_kartya .kep{
+	height: 10rem;
+	background-color: rgba(0,0,0,.03);
+	text-align: center;
+	border-radius: 2.5rem;
+}
+.kep_kartya .kep img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+.kep_kartya .kep img:hover{
+	-webkit-box-shadow: 0px 0px 72px 30px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 72px 30px rgba(0,0,0,0.5);
+box-shadow: 0px 0px 72px 30px rgba(0,0,0,0.5);
+border-radius: 2.5rem;
+}
+.kep_kartya p{
+	font-size: .75rem;
+	padding-top: .4rem;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-weight: 150;
+
+}
+.kep_kartya{
+	width: 15%;
+	min-width: 320px;
+}
+.h1{
+	text-align: center;
+	font-size: 20px;
+	
+}
+.h2{
+	text-align: center;
+	padding: 4px;
+	margin: 4px;
+	font-size: 20px;
+
+}
+.h{
+	font-size: 20px;
+	text-align: center;
+}
+
+/*--csgo oldal--*/
+.kartya img{
+	max-height: 10rem;
+	display: block;
+	margin: 16px auto;
+}
+.kartya{
+	vertical-align: top;
+	display: inline-block;
+	background-color: lightblue;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 16px;
+	margin: 3.5rem;
+	text-align: center;
+	max-width: 20rem;
+
+}
+.kartya:hover{
+	-webkit-box-shadow: 0px 10px 90px -4px rgba(0,0,0,0.63);
+-moz-box-shadow: 0px 10px 90px -4px rgba(0,0,0,0.63);
+box-shadow: 0px 10px 90px -4px rgba(0,0,0,0.63);
+cursor: pointer;
+}
+
+.csheading{
+	text-align: center;
+	font-weight: 600;
+	padding: 30px;
+	display: inline-block;
+	width: 686px;
+
+}
+/*
+<ol>
+				<li><a href="css/kepek/jomagam.jpg" download style="text-decoration: none;">jomagam</a></li>
+				<li><a href="css/kepek/jomagam.jpg" download style="text-decoration: none;">jomagam</a></li>
+			</ol>*/
+
+/*
+<h1 class="cim">
+			<span>Bemutatkozás</span>
+		</h1>
+
+		
+
+
+		<h2 class="bemutatkozas">Szasztok! Szűcs Koppány vagyok, a Budapesti Műszaki- és Gazdaságtudományi Egyetem Energetikai Mérnök alapszakos hallgatója. 18 éves vagyok és egy Mezőszilas nevű kisfaluban élek. Hobbijaim közé tartozik a sakk és a Rubik kocka, továbbá érdekel még a quantum fizika és a számítógépes technológia. Szabadidőmben sorozatokat és filmeket nézek, könyveket olvasok vagy éppen a barátaimmal játszok online.</h2>
+
+		<img src="css/kepek/jomagam.jpg" alt="jomagam" width="25%" height="width" align="left" style="padding-right: 20px" class="kepbal">
+
+		<img src="css/kepek/jomagam2.jpg" alt="jomagam2" width="25%" height="width" align="right" style="padding-left: 20px" class="kepjobb">
+*/
+
